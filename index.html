@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Property Filter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Property Filter</h1>
+
+<form id="filters">
+  <label>Location
+    <select id="location"><option value="">Any</option></select>
+  </label>
+  <label>Type
+    <select id="type"><option value="">Any</option></select>
+  </label>
+  <label>Min price
+    <input type="number" id="minPrice" min="0" step="10000" placeholder="0">
+  </label>
+  <label>Max price
+    <input type="number" id="maxPrice" min="0" step="10000" placeholder="Any">
+  </label>
+  <label>Min bedrooms
+    <select id="beds">
+      <option value="0">Any</option>
+      <option value="1">1+</option>
+      <option value="2">2+</option>
+      <option value="3">3+</option>
+      <option value="4">4+</option>
+    </select>
+  </label>
+  <label>Min bathrooms
+    <select id="baths">
+      <option value="0">Any</option>
+      <option value="1">1+</option>
+      <option value="2">2+</option>
+      <option value="3">3+</option>
+    </select>
+  </label>
+  <button type="reset" id="reset">Clear</button>
+</form>
+
+<p id="count"></p>
+<div id="results"></div>
+
+<script src="properties.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

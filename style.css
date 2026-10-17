@@ -1,0 +1,55 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #f5f6f8;
+  color: #222;
+}
+
+#filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  gap: 4px;
+}
+
+input, select, button {
+  font-size: 1rem;
+  padding: 6px;
+}
+
+button {
+  align-self: end;
+  cursor: pointer;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  color: #0a6;
+}
+
+.card p {
+  margin: 4px 0;
+}
